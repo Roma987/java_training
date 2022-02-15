@@ -6,8 +6,7 @@ public class Calculator {
         Logic logic = new Logic();
         View view = new View();
 
-        input.consoleInputOneParameter();
-        view.showFalseOrTrue(logic.sumFirstAndlLastTwo(input.a));
+        view.showFalseOrTrue(logic.sumFirstAndlLastTwo(input.consoleInputOneParameter()));
 
         input.consoleInputThreeParameters();
         view.showFormula(logic.calculateFormula(input.b,input.c,input.d));
